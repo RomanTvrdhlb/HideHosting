@@ -1,0 +1,117 @@
+// --------------- hex to rgba mixin ---------------
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+:root {
+// --------------- default global variable ---------------
+  --body-bg: #f5f9ff;
+  --body-font-size: 16px;
+  --content-width: 1170px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+// --------------- default JS variable ---------------
+  --header-height: 85px;
+// --------------- default JS tablet variable ---------------
+  @media (max-width: 1024px) {
+    --header-height: 65px;
+  }
+
+// --------------- default JS small-tablet variable ---------------
+  @media (max-width: 767px) {
+    --header-height:82px;
+  }
+
+
+// --------------- default scroll variable ---------------
+  --scrollbar-thumb: #71717a;
+  --scrollbar-thumb-hover: #f6866F6ff;
+  --scrollbar-track:  #d5d5d5;
+  --scrollbar-track-hover: #05031d;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+
+// --------------- default slect variable ---------------
+  --select-inner-bg: #404040;
+  --select-inner-border: #FDFDFD;
+  --select-focus-border: #FDFDFD;
+
+// --------------- default font-family variable ---------------
+  --font-family: "Inter" , sans-serif; // var(--font-family);
+
+// --------------- default text color variable ---------------
+  --burger-cl: #{HexToRGB(#00d655)};
+
+  --cl-a: #{HexToRGB(#ffffff)}; // rgba(var(--cl-a),1.0);
+  --cl-b: #{HexToRGB(#000000)}; // rgba(var(--cl-b),1.0);
+  --cl-c: #{HexToRGB(#f7f7fe)}; // rgba(var(--cl-c),1.0);
+  --cl-d: #{HexToRGB(#5457cd)}; // rgba(var(--cl-d),1.0);
+  --cl-e: #{HexToRGB(#3f3f46)}; // rgba(var(--cl-e),1.0);
+  --cl-f: #{HexToRGB(#71717a)}; // rgba(var(--cl-f),1.0);
+  --cl-g: #{HexToRGB(#6b7280)}; // rgba(var(--cl-g),1.0);
+  --cl-h: #{HexToRGB(#18181b)}; // rgba(var(--cl-h),1.0);
+
+
+  --cl-i: #{HexToRGB(#66F6A8)}; // rgba(var(--cl-i),1.0);
+  --cl-j: #{HexToRGB(#BAC9F0)}; // rgba(var(--cl-j),1.0);
+  --cl-k: #{HexToRGB(#2284f3)}; // rgba(var(--cl-k),1.0);
+  --cl-l: #{HexToRGB(#2DD84A)}; // rgba(var(--cl-l),1.0);
+ 
+// --------------- default background cl variable ---------------
+  --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
+  --bg-b: #{HexToRGB(#000000)}; // rgba(var(--bg-b),1.0);
+  --bg-c: #{HexToRGB(#5457cd)}; // rgba(var(--bg-c),1.0);
+  --bg-d: #{HexToRGB(#e5e7eb)}; // rgba(var(--bg-d),1.0);
+  --bg-e: #{HexToRGB(#f5f9ff)}; // rgba(var(--bg-e),1.0);
+  --bg-f: #{HexToRGB(#fafafa)}; // rgba(var(--bg-f),1.0);
+  --bg-g: #{HexToRGB(#4f46e5)}; // rgba(var(--bg-g),1.0);
+  --bg-h: #{HexToRGB(#4338ca)}; // rgba(var(--bg-h),1.0);
+
+
+  --bg-i: #{HexToRGB(#66F6A8)}; // rgba(var(--bg-i),1.0);
+  --bg-j: #{HexToRGB(#101b38)}; // rgba(var(--bg-j),1.0);
+  --bg-k: #{HexToRGB(#0B172D)}; // rgba(var(--bg-k),1.0);
+  --bg-l: #{HexToRGB(#1C2552)}; // rgba(var(--bg-l),1.0);
+
+// --------------- default border cl variable ---------------
+  --br-a: #e4e4e7; // var(--br-a);
+  --br-b: #f4f4f5; // var(--br-b);
+  --br-c: #d4d4d8; // var(--br-c);
+
+
+  --br-d: #212B62; // var(--br-d);
+  --br-e: #293874; // var(--br-e);
+  --br-f: #546DB3; // var(--br-f);
+  --br-g: #66F6A8; // var(--br-g);
+  --br-h: #FA305C; // var(--br-h);
+
+
+// --------------- gradient background cl variable ---------------
+
+  --gradient-a: linear-gradient(180deg, rgba(104, 102, 246, 0) 0%, rgba(104, 102, 246, 0.1) 100%);
+  --gradient-b: linear-gradient(180deg, #6866F6 0%, rgba(104, 102, 246, 0) 100%);
+  --gradient-c: linear-gradient(207.09deg, #6866F6 7.82%, rgba(104, 102, 246, 0) 83.08%);
+  --gradient-d: linear-gradient(0deg, rgba(104, 102, 246, 0) 0%, rgba(104, 102, 246, 0.1) 100%);
+  --gradient-e: linear-gradient(207.09deg, #6866F6 7.82%, rgba(104, 102, 246, 0) 83.08%);
+
+  --gradient-f: linear-gradient(270deg, rgba(104, 102, 246, 0) 0%, rgba(104, 102, 246, 0.45) 100%);
+  --gradient-g: linear-gradient(270deg, rgba(38, 241, 114, 0) 0%, rgba(38, 241, 114, 0.43) 100%);
+  --gradient-h: linear-gradient(270deg, rgba(104, 102, 246, 0) 0%, #FB6939 190%);
+  --gradient-i: linear-gradient(261.67deg, #6866F6 14.16%, rgba(104, 102, 246, 0) 94.97%);
+  
+  
+
+
+
+
+
+
+// --------------- icon background cl variable ---------------
+
+  --icon-a: rgb(104, 102, 246); // var(--icon-a);
+  --icon-b: rgb(231, 65, 66); // var(--icon-b);
+  --icon-c: rgb(45, 216, 74); // var(--icon-c);
+  --icon-d: rgb(185, 139, 242); // var(--icon-d);
+  --icon-e: rgb(242, 184, 72); // var(--icon-e);
+  --icon-f: rgb(34, 158, 120); // var(--icon-f);
+  --icon-g: rgba(240, 185, 11, 0.11); // var(--icon-g);
+}

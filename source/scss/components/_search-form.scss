@@ -1,0 +1,39 @@
+.search-form{
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px #0000000d;
+
+
+    &__btn{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        left: 0.75rem;
+
+        svg{
+            fill: transparent;
+            stroke: rgba(var(--cl-e),.7);
+        }
+    }
+
+    &__label{
+        appearance: none;
+        background: rgba(var(--bg-a),1.0);
+        border: 1px solid var(--br-c);
+        border-radius: 0.375rem;      
+        padding: 0.75rem;
+        position: relative;
+        padding-left: 2.5rem;
+
+       
+    }
+
+    &__input{
+        color: rgba(var(--cl-e),1.0);
+        font-family: var(--font-family);
+        font-size: 1rem;
+        &::placeholder{
+            color: rgba(var(--cl-f),1.0);
+            font-family: var(--font-family);
+            font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+header {
+  width: 100%;
+  background-color: rgba(var(--bg-a),1.0);
+
+}
+
+.header__inner {
+  display: flex;
+  padding: 1rem 2rem;
+  grid-gap: 2rem;
+  align-items: center;
+  border-bottom: 1px solid var(--br-a);
+ 
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+}

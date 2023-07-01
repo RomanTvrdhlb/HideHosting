@@ -1,0 +1,18 @@
+.user-avatar{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  background-color: rgba(var(--bg-d),1.0);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.sign-out{
+  border-radius: .375rem;
+  padding: 0.5rem;
+  color: rgba(var(--cl-d),1.0);
+
+}

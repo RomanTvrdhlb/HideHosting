@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="En-en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Description" content="default">
+    <link rel="shortcut icon" href="img/sprite/fav.svg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Defi</title>
+
+    <link rel="preload" href="fonts/Inter-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-Medium.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-SemiBold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-Bold.woff" as="font" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body data-tabs-parrent>
+  <header class="header fixed-block">
+  <div class="header__inner">
+    <img src="/img/sprite/logo.svg" alt="logo" class="main-logo" width='107' height='48'>
+      <div class="header-box">
+        
+        <ul class="main-nav">
+          <li class="main-nav__item">
+            <button class="main-nav__button active" data-tab="1">Statistic</button>
+          </li>
+          <li class="main-nav__item">
+            <button class="main-nav__button" data-tab="2">Proxy</button>
+          </li>
+          <li class="main-nav__item">
+            <button class="main-nav__button" data-tab="3">Settings</button>
+          </li>
+          <li class="main-nav__item">
+            <button class="main-nav__button" data-tab="4">Support</button>
+          </li>
+        </ul>
+
+        <div class="user-avatar">
+        <svg width='' height=''>
+          <use href='img/sprite/sprite.svg#'></use>
+        </svg>
+        </div>
+      </div>
+
+      <button class="sign-out">
+        <svg width='16' height='16'>
+          <use href='img/sprite/sprite.svg#'></use>
+        </svg>
+      </button>
+
+  </div>
+
+</header>
+
+
+  <main>
+
+    <section class="statistic-section active" data-tab-content="1">
+      <div class="statistic-section__box">
+      <div class="statistic-section__inner">
+        <div class="statistic-section__top">
+          <form class="search-form">
+            <label for="search" class="search-form__label">
+              <input type="text" name="search" class="search-form__input" placeholder="Keyword Search">
+              <button class="search-form__btn">
+                <svg width='16' height='16'>
+                  <use href='img/sprite/sprite.svg#search'></use>
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
+
+        <ul class="statistic-list">
+          <li class="statistic-list__row--name statistic-list__row">
+            <span class="statistic-list__name statistic-list__coll">Email</span>
+            <span class="statistic-list__name statistic-list__coll">Telegram</span>
+            <a href="#" class="statistic-list__name statistic-list__coll" data-balance>Balance</a>
+            <span class="statistic-list__name statistic-list__coll">site</span>
+            <span class="statistic-list__name statistic-list__coll">ip1</span>
+            <span class="statistic-list__name statistic-list__coll">ip2</span>
+            <span class="statistic-list__name statistic-list__coll">ip3</span>
+            <span class="statistic-list__name statistic-list__coll">ip3</span>
+            <span class="statistic-list__name statistic-list__coll">port http</span>
+            <span class="statistic-list__name statistic-list__coll">port https</span>
+          </li>
+          <li class="statistic-list__row">
+            <span class="statistic-list__coll">test@mail.com</span>
+            <span class="statistic-list__coll">@testTg</span>
+            <a href="#" class="statistic-list__coll" data-balance>1500UAH</a>
+            <span class="statistic-list__coll">https:/test.com</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">80</span>
+            <span class="statistic-list__coll">443</span>
+          </li>
+          <li class="statistic-list__row">
+            <span class="statistic-list__coll">test@mail.com</span>
+            <span class="statistic-list__coll">@testTg</span>
+            <a href="#" class="statistic-list__coll" data-balance>1500UAH</a>
+            <span class="statistic-list__coll">https:/test.com</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">80</span>
+            <span class="statistic-list__coll">443</span>
+          </li>
+          <li class="statistic-list__row">
+            <span class="statistic-list__coll">test@mail.com</span>
+            <span class="statistic-list__coll">@testTg</span>
+            <a href="#" class="statistic-list__coll" data-balance>1500UAH</a>
+            <span class="statistic-list__coll">https:/test.com</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">80</span>
+            <span class="statistic-list__coll">443</span>
+          </li>
+          <li class="statistic-list__row">
+            <span class="statistic-list__coll">test@mail.com</span>
+            <span class="statistic-list__coll">@testTg</span>
+            <a href="#" class="statistic-list__coll" data-balance>1500UAH</a>
+            <span class="statistic-list__coll">https:/test.com</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">192.168.1.1</span>
+            <span class="statistic-list__coll">80</span>
+            <span class="statistic-list__coll">443</span>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="balance-list">
+        <li class="balance-list__row--name balance-list__row">
+          <span class="balance-list__name balance-list__coll">operation</span>
+          <span class="balance-list__name balance-list__coll">date</span>
+          <span class="balance-list__name balance-list__coll">balance on date</span>
+          <span class="balance-list__name balance-list__coll">contacts</span>
+        </li>
+        <li class="balance-list__row">
+          <span class="balance-list__coll">default</span>
+          <span class="balance-list__coll">01.07.2023</span>
+          <span class="balance-list__coll">1000UAH</span>
+          <span class="balance-list__coll">@testTg</span>
+        </li>
+        <li class="balance-list__row">
+          <span class="balance-list__coll">default</span>
+          <span class="balance-list__coll">01.07.2023</span>
+          <span class="balance-list__coll">1000UAH</span>
+          <span class="balance-list__coll">@testTg</span>
+        </li>
+      </ul>
+    </div>
+    </section>
+
+    <section class="settings-section active" data-tab-content="3">
+      <div class="settings-section__box">
+        <form action="#" class="change-form">
+          <span class="change-form__title">Change password</span>
+          <label for="old-pass" class="change-form__label">
+            <span class="change-form__subtitle">Old Password</span>
+            <input type="password" name="old-pass" class="change-form__input">
+          </label>
+          <label for="new-pass" class="change-form__label">
+            <span class="change-form__subtitle">New Password</span>
+            <input type="password" name="new-pass" class="change-form__input">
+          </label>
+          <label for="confirm" class="change-form__label">
+            <span class="change-form__subtitle">Confirm New Password</span>
+            <input type="password" name="confirm"class="change-form__input">
+          </label>
+          <button class="change-form__btn">Send</button>
+        </form>
+
+        <form action="#" class="change-form">
+          <span class="change-form__title">Change Email</span>
+          <label for="old-mail" class="change-form__label">
+            <span class="change-form__subtitle">Old Email</span>
+            <input type="text" name="old-mail" class="change-form__input">
+          </label>
+          <label for="new-mail" class="change-form__label">
+            <span class="change-form__subtitle">New Email</span>
+            <input type="text" name="new-mail" class="change-form__input">
+          </label>
+          <label for="confirm" class="change-form__label">
+            <span class="change-form__subtitle">Confirm New Email</span>
+            <input type="text" name="confirm"class="change-form__input">
+          </label>
+          <button class="change-form__btn">Send</button>
+        </form>
+    
+    </div>
+    </section>
+  </main>
+
+
+
+
+  
+  
+</body>
+<script src="js/main.js"></script>
+
+</html>
