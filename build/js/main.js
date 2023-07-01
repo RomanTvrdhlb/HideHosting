@@ -12,7 +12,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/tabs */ "./source/js/components/tabs.js");
 /* harmony import */ var _components_select__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/select */ "./source/js/components/select.js");
 /* harmony import */ var _components_select__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_select__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_btnTable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/btnTable */ "./source/js/components/btnTable.js");
+/* harmony import */ var _components_accordions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/accordions */ "./source/js/components/accordions.js");
+/* harmony import */ var _components_btnTable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/btnTable */ "./source/js/components/btnTable.js");
 // import './components/animations';
 // import './components/getDinamicHeight';
 // import './components/sliders';
@@ -23,7 +24,7 @@ __webpack_require__.r(__webpack_exports__);
 // import './components/show-pass';
 
 // import './components/replaceEl';
-// import './components/accordions';
+
 
 // import './components/anchor';
 
@@ -87,6 +88,105 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+/***/ }),
+
+/***/ "./source/js/components/accordions.js":
+/*!********************************************!*\
+  !*** ./source/js/components/accordions.js ***!
+  \********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./source/js/_vars.js");
+/* harmony import */ var _functions_customFunctions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../functions/customFunctions */ "./source/js/functions/customFunctions.js");
+
+
+const {
+  accParrent
+} = _vars__WEBPACK_IMPORTED_MODULE_0__["default"];
+window.addEventListener('DOMContentLoaded', () => {
+  accParrent && accParrent.map(function (accordionParrent) {
+    if (accordionParrent) {
+      let multipleSetting = false;
+      let breakpoinSetting = false;
+      let defaultOpenSetting;
+      if (accordionParrent.dataset.single && accordionParrent.dataset.breakpoint) {
+        multipleSetting = accordionParrent.dataset.single; // true - включает сингл аккордион
+        breakpoinSetting = accordionParrent.dataset.breakpoint; // брейкпоинт сингл режима (если он true)
+      }
+
+      const getAccordions = function () {
+        let dataName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "[data-id]";
+        return accordionParrent.querySelectorAll(dataName);
+      };
+      const accordions = getAccordions();
+      let openedAccordion = null;
+      const closeAccordion = function (accordion) {
+        let className = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "active";
+        accordion.style.maxHeight = 0;
+        (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_1__.removeCustomClass)(accordion, className);
+      };
+      const openAccordion = function (accordion) {
+        let className = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "active";
+        accordion.style.maxHeight = accordion.scrollHeight + "px";
+        (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_1__.addCustomClass)(accordion, className);
+      };
+      const toggleAccordionButton = function (button) {
+        let className = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "active";
+        (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_1__.toggleCustomClass)(button, className);
+      };
+      const checkIsAccordionOpen = function (accordion) {
+        return accordion.classList.contains('active');
+      };
+      const accordionClickHandler = function (e) {
+        e.preventDefault();
+        let curentDataNumber = this.dataset.id;
+        toggleAccordionButton(this);
+        const accordionContent = accordionParrent.querySelector(`[data-content="${curentDataNumber}"]`);
+        const isAccordionOpen = checkIsAccordionOpen(accordionContent);
+        if (isAccordionOpen) {
+          closeAccordion(accordionContent);
+          openedAccordion = null;
+        } else {
+          if (openedAccordion != null) {
+            const mobileSettings = () => {
+              let containerWidth = document.documentElement.clientWidth;
+              if (containerWidth <= breakpoinSetting && multipleSetting === 'true') {
+                closeAccordion(openedAccordion);
+                toggleAccordionButton(accordionParrent.querySelector(`[data-id="${openedAccordion.dataset.content}"]`));
+              }
+            };
+            window.addEventListener('resize', () => {
+              mobileSettings();
+            });
+            mobileSettings();
+          }
+          openAccordion(accordionContent);
+          openedAccordion = accordionContent;
+        }
+      };
+      const activateAccordion = function (accordions, handler) {
+        for (const accordion of accordions) {
+          accordion.addEventListener('click', handler);
+        }
+      };
+      const accordionDefaultOpen = currentId => {
+        const defaultOpenContent = accordionParrent.querySelector(`[data-content="${currentId}"]`);
+        const defaultOpenButton = accordionParrent.querySelector(`[data-id="${currentId}"]`);
+        openedAccordion = defaultOpenContent;
+        toggleAccordionButton(defaultOpenButton);
+        openAccordion(defaultOpenContent);
+      };
+      if (accordionParrent.dataset.default) {
+        defaultOpenSetting = accordionParrent.dataset.default; // получает id аккордиона который будет открыт по умолчанию
+        accordionDefaultOpen(defaultOpenSetting);
+      }
+      activateAccordion(accordions, accordionClickHandler);
+    }
+  });
+});
 
 /***/ }),
 

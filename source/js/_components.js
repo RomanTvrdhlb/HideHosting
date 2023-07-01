@@ -8,7 +8,7 @@ import './components/tabs';
 // import './components/show-pass';
 import './components/select';
 // import './components/replaceEl';
-// import './components/accordions';
+import './components/accordions';
 import './components/btnTable';
 // import './components/anchor';
 

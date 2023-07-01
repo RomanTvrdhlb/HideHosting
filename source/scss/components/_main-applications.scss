@@ -112,6 +112,12 @@
     font-weight: 500;
     color: rgba(var(--cl-f), 1);
 
+    svg{
+      rotate: 180deg;
+      fill: transparent;
+      stroke: rgba(var(--cl-f), 1);
+    }
+
     &--date {
       justify-content: flex-end;
     }

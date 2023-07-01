@@ -116,18 +116,15 @@
   border-radius: .375rem;
   padding: 0.5rem!important;
   background: transparent;
-
-  svg{
-    rotate: 180deg;
-    stroke: rgba(var(--bg-c),1.0);
-    fill: transparent;
-  }
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(var(--cl-d),1.0);
 
   &:hover{
     background: rgba(var(--bg-c),1.0);
-
-    svg{
-      stroke: rgba(var(--bg-a),1.0);
-    }
+    color: rgba(var(--cl-c),1.0);
+   
   }
 }

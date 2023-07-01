@@ -38,6 +38,11 @@
 // --------------- default font-family variable ---------------
   --font-family: "Inter" , sans-serif; // var(--font-family);
 
+  --font-family2: "fa-brands" , sans-serif; // var(--font-family2);
+  --font-family3: "fa-regular" , sans-serif; // var(--font-family3);
+  --font-family4: "fa-v4" , sans-serif; // var(--font-family4);
+  --font-family5: "fa-solid-900" , sans-serif; // var(--font-family5);
+
 // --------------- default text color variable ---------------
   --burger-cl: #{HexToRGB(#00d655)};
 
@@ -52,7 +57,9 @@
   --cl-i: #{HexToRGB(#4f46e5)}; // rgba(var(--cl-i),1.0);
 
 
-  --cl-j: #{HexToRGB(#BAC9F0)}; // rgba(var(--cl-j),1.0);
+  --cl-j: #{HexToRGB(#f2ff00)}; // rgba(var(--cl-j),1.0);
+
+
   --cl-k: #{HexToRGB(#2284f3)}; // rgba(var(--cl-k),1.0);
   --cl-l: #{HexToRGB(#2DD84A)}; // rgba(var(--cl-l),1.0);
  
@@ -69,6 +76,7 @@
   --bg-j: #{HexToRGB(#22c55e)}; // rgba(var(--bg-j),1.0);
   --bg-k: #{HexToRGB(#16a34a)}; // rgba(var(--bg-k),1.0);
   --bg-l: #{HexToRGB(#4338ca)}; // rgba(var(--bg-l),1.0);
+  --bg-m: #{HexToRGB(#f2ff00)}; // rgba(var(--bg-m),1.0);
 
 // --------------- default border cl variable ---------------
   --br-a: #e4e4e7; // var(--br-a);
@@ -80,6 +88,7 @@
   --br-g: #16a34a; // var(--br-g);
   --br-h: #ef4444; // var(--br-h);
   --br-i: #4338ca; // var(--br-i);
+  --br-j: #f2ff00; // var(--br-j);
 
 
 // --------------- gradient background cl variable ---------------

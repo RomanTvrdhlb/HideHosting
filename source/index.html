@@ -425,21 +425,15 @@
                 <div class="proxy-form__wrapp">
                   <div class="proxy-form__bar">
                     <button class="proxy-form__btn">
-                      <svg width='16' height='16'>
-                        <use href='img/sprite/sprite.svg#plus'></use>
-                      </svg>
+                      <i class="fa-solid fa-plus fa-lg"></i>
                       Choose
                     </button>
                     <button class="proxy-form__btn" disabled>
-                      <svg width='16' height='16'>
-                        <use href='img/sprite/sprite.svg#icon1'></use>
-                      </svg>
+                      <i class="fa-solid fa-upload"></i>
                       Upload
                     </button>
                     <button class="proxy-form__btn" disabled>
-                      <svg width='16' height='16'>
-                        <use href='img/sprite/sprite.svg#cancel'></use>
-                      </svg>
+                      <i class="fa-solid fa-xmark fa-lg"></i>
                       Cancel
                     </button>
                   </div>
@@ -498,7 +492,7 @@
       </div>
     </section>
 
-    <section class="support-section">
+    <section class="support-section" data-tab-content="4">
       <div class="support-section__box">
 
         <div class="main-applications">
@@ -530,112 +524,153 @@
           <ul class="main-applications__list">
             <li class="main-applications__item">
               <div class="main-applications__row--top main-applications__row">
-                <button class="main-applications__filter">Отдел</button>
-                <button class="main-applications__filter">Тема</button>
-                <button class="main-applications__filter">Статус</button>
-                <button class="main-applications__filter main-applications__filter--date">Последнее обновление</button>
+                <button class="main-applications__filter">Отдел
+                  <svg width='13' height='5'>
+                    <use href='img/sprite/sprite.svg#arrow'></use>
+                  </svg>
+                </button>
+                <button class="main-applications__filter">Тема
+                  <svg width='13' height='5'>
+                    <use href='img/sprite/sprite.svg#arrow'></use>
+                  </svg>
+                </button>
+                <button class="main-applications__filter">Статус
+                  <svg width='13' height='5'>
+                    <use href='img/sprite/sprite.svg#arrow'></use>
+                  </svg>
+                </button>
+                <button class="main-applications__filter main-applications__filter--date">Последнее обновление
+                  <svg width='13' height='5'>
+                    <use href='img/sprite/sprite.svg#arrow'></use>
+                  </svg>
+                </button>
               </div>
             </li>
             <li class="main-applications__item">
-              <div class="main-applications__row">
+              <a href="#" class="main-applications__row">
                 <span class="main-applications__title">Support</span>
                 <div class="main-applications__row-inner">
                   <span class="main-applications__pretitle">#XBO-372591</span>
                   <p>Сертификат Digicert Code signing</p>
                 </div>
                 <span class="main-applications__status answered">
-                  <svg width='16' height='16'>
-                    <use href='img/sprite/sprite.svg#arrow'></use>
-                  </svg>
+                  <i class="fa-solid fa-arrow-right-to-bracket fa-rotate-180 fa-lg"></i>
                   Отвечен</span>
                 <span class="main-applications__date">02.06.2023 (12:39)</span>
-              </div>
+              </a>
             </li>
             <li class="main-applications__item">
-              <div class="main-applications__row">
+              <a href="#" class="main-applications__row">
                 <span class="main-applications__title">Support</span>
                 <div class="main-applications__row-inner">
                   <span class="main-applications__pretitle">#XBO-372591</span>
                   <p>Сертификат Digicert Code signing</p>
                 </div>
                 <span class="main-applications__status closed">
-                  <svg width='16' height='16'>
-                    <use href='img/sprite/sprite.svg#arrow'></use>
-                  </svg>
+                  <i class="fa-regular fa-circle-xmark fa-lg"></i>
                   Отвечен</span>
                 <span class="main-applications__date">02.06.2023 (12:39)</span>
-              </div>
+              </a>
             </li>
           </ul>
           <div class="main-applications__bottom">
             <div class="main-applications__notes">
-            <span class="main-applications__text">Показать</span>
-            <div class='notes-select select' data-select>
-              <input type='hidden' class='select__input' name='variant-product' value="1">
-              <div class='select__header'>
-                <span class='select__current' data-id="1">10</span>
-                <div class='select__icon'>
-                  <svg width='13' height='5'>
-                    <use href='img/sprite/sprite.svg#arrow'></use>
-                  </svg>
+              <span class="main-applications__text">Показать</span>
+              <div class='notes-select select' data-select>
+                <input type='hidden' class='select__input' name='variant-product' value="1">
+                <div class='select__header'>
+                  <span class='select__current' data-id="1">10</span>
+                  <div class='select__icon'>
+                    <svg width='13' height='5'>
+                      <use href='img/sprite/sprite.svg#arrow'></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class='select__body'>
+                  <ul class='select__wrapp'>
+                    <li class='select__item' data-choice='choosen' data-id="1">10
+                    </li>
+                    <li class='select__item' data-choice='choosen' data-id="2">20
+                    </li>
+                    <li class='select__item' data-choice='choosen' data-id="3">30</li>
+                    <li class='select__item' data-choice='choosen' data-id="4">40</li>
+                  </ul>
                 </div>
               </div>
-              <div class='select__body'>
-                <ul class='select__wrapp'>
-                  <li class='select__item' data-choice='choosen' data-id="1">10
-                  </li>
-                  <li class='select__item' data-choice='choosen' data-id="2">20
-                  </li>
-                  <li class='select__item' data-choice='choosen' data-id="3">30</li>
-                  <li class='select__item' data-choice='choosen' data-id="4">40</li>
-                </ul>
-              </div>
+              <span class="main-applications__text">записей</span>
             </div>
-            <span class="main-applications__text">записей</span>
-          </div>
 
-          <div class="main-applications__nav">
-            <a href="#" class="main-applications__text">Назад</a>
-            <a href="#" class="main-applications__page">1</a>
-            <a href="#" class="main-applications__text">Вперед</a>
-          </div>
+            <div class="main-applications__nav">
+              <a href="#" class="main-applications__text">Назад</a>
+              <a href="#" class="main-applications__page">1</a>
+              <a href="#" class="main-applications__text">Вперед</a>
+            </div>
           </div>
         </div>
 
+        <form action="#" class="comment-form">
+          <ul class='comment-acc accordion' data-accordion-init>
+            <li class='comment-acc__item accordion__item'>
+              <div class="comment-acc__header">
+                <label for="subject" class="comment-acc__label comment">
+                  <span class="comment-acc__label-icon">
+                    <i class="fa-solid fa-pen-to-square fa-lg" style="color: #5457cd;"></i>
+                  </span>
+                  <input name="subject" type="text" class="comment-acc__input" placeholder="Enter Subject">
+                </label>
+                <button class='accordion__btn' data-id='1'>
+                  <svg width='13' height='5'>
+                    <use href='img/sprite/sprite.svg#arrow'></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class='comment-acc__content accordion__content' data-content='1'>
+                <div class="comment-acc__box">
+                  <label for="comment" class="comment-acc__label">
+                    <span class="comment-acc__pretitle">Mail</span>
+                    <textarea class="comment-acc__area" name="comment"></textarea>
+                  </label>
+
+                  <div class="comment-acc__inner">
+                    <span class="comment-acc__pretitle">Attachments</span>
+                    <div class="comment-attachment">
+                      <div class="comment-attachment__inner">
+                        <button class="comment-attachment__btn">Select File</button>
+                        <p>No File Selected</p>
+                      </div>
+                      <button class="comment-attachment__add">
+                        <i class="fa-solid fa-plus fa-lg"></i>
+                        Add more
+                      </button>
+                      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </div>
+
+                    <div class="comment-acc__btns">
+                      <button class="comment-acc__send">Send</button>
+                      <button class="comment-acc__cancel">Cancel</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+          </ul>
+        </form>
         <form action="#" class="support-form">
-          <!-- <div class="proxy-form__inner">
-            <label for="ip" class="proxy-form__label">
-              <span class="proxy-form__subtitle">IP</span>
-              <input type="number" name="ip" class="proxy-form__input">
-            </label>
-            <label for="country" class="proxy-form__label">
-              <span class="proxy-form__subtitle">Country</span>
-              <input type="text" name="country" class="proxy-form__input">
-            </label>
-            <label for="server" class="proxy-form__label">
-              <span class="proxy-form__subtitle">Type server (note)</span>
-              <input type="text" name="server" class="proxy-form__input">
-            </label>
-          </div> -->
           <p>Or upload from file</p>
           <div class="support-form__wrapp">
             <div class="support-form__bar">
               <button class="support-form__btn">
-                <svg width='16' height='16'>
-                  <use href='img/sprite/sprite.svg#plus'></use>
-                </svg>
+                <i class="fa-solid fa-plus fa-lg"></i>
                 Choose
               </button>
               <button class="support-form__btn" disabled>
-                <svg width='16' height='16'>
-                  <use href='img/sprite/sprite.svg#icon1'></use>
-                </svg>
+                <i class="fa-solid fa-upload"></i>
                 Upload
               </button>
               <button class="support-form__btn" disabled>
-                <svg width='16' height='16'>
-                  <use href='img/sprite/sprite.svg#cancel'></use>
-                </svg>
+                <i class="fa-solid fa-xmark fa-lg"></i>
                 Cancel
               </button>
             </div>
@@ -661,5 +696,6 @@
   @include('partials/modals.html')
 </body>
 <script src="js/main.js"></script>
+
 
 </html>
