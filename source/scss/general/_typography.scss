@@ -87,3 +87,47 @@
     outline-offset: 0;
   }
 }
+
+.button-sumbit{
+  color: rgba(var(--cl-a),1.0);
+  background: rgba(var(--bg-g),1.0);
+  border: solid 1px var(--br-e);
+  border-radius: 0.375rem;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover{
+    background: rgba(var(--bg-l),1.0);
+    border-color: var(--br-i);
+  }
+
+  &:focus{
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #6366f1, 0 1px 2px 0 transparent;
+    outline: 0 none;
+    outline-offset: 0;
+  }
+}
+
+.sign-out{
+  border-radius: .375rem;
+  padding: 0.5rem!important;
+  background: transparent;
+
+  svg{
+    rotate: 180deg;
+    stroke: rgba(var(--bg-c),1.0);
+    fill: transparent;
+  }
+
+  &:hover{
+    background: rgba(var(--bg-c),1.0);
+
+    svg{
+      stroke: rgba(var(--bg-a),1.0);
+    }
+  }
+}
