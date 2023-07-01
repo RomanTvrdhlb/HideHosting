@@ -23,7 +23,12 @@
         position: relative;
         padding-left: 2.5rem;
 
-       
+        &:has(.search-form__input:focus){
+            border-color: var(--br-e);
+            box-shadow: 0 0 0 1px #6366f1;
+            outline: 0 none;
+            outline-offset: 0;
+        }
     }
 
     &__input{

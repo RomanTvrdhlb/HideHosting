@@ -44,6 +44,5 @@ const tabsFunction = function (
 };
 
 tabsFunction(tabsParrents, "data-tab", "data-tab-content");
-tabsFunction(tabsParrents, "data-inner-tab", "data-inner-content");
-tabsFunction(tabsParrents, "data-small-tab", "data-small-content");
-tabsFunction(tabsParrents, "data-wrapper-tab", "data-wrapper-content");
+tabsFunction(tabsParrents, "data-proxy-tab", "data-proxy-content");
+

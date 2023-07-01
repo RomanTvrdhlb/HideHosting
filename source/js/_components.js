@@ -5,7 +5,7 @@
 // import './components/buffer';
 // import './components/modals';
 import './components/tabs';
-import './components/show-pass';
+// import './components/show-pass';
 // import './components/select';
 // import './components/replaceEl';
 // import './components/accordions';

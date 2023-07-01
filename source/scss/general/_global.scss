@@ -343,7 +343,7 @@ input[type="number"] {
   transition: max-height 0.2s;
 }
 
-[data-tab-content], [data-inner-content], [data-small-content], [data-wrapper-content] {
+[data-tab-content], [data-proxy-content] {
   display: none !important;
 
   &.active {

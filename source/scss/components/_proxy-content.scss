@@ -1,0 +1,25 @@
+.proxy-content{
+
+
+    &__box{
+        background-color: rgba(var(--bg-a),1.0);
+        border: 0;
+        border-bottom-left-radius: 0.375rem;
+        border-bottom-right-radius: 0.375rem;
+        padding: 1.25rem;
+    }
+
+
+    &__top{
+        padding: 0.625rem;
+        background-color: rgba(var(--bg-f),1.0);
+        border: 1px solid var(--br-b);
+        border-width: 1px 0;
+        color: rgba(var(--cl-e),1.0);
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+    }
+}

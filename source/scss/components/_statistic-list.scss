@@ -1,15 +1,16 @@
 .statistic-list{
     display: flex;
     flex-direction: column;
+   
     @include tablet{
+        min-height: 14.05rem;
         overflow-x: scroll;
     }
 
     &__row{
         display: grid;
-  
+        align-items: center;
         grid-template-columns: repeat(10, 1fr);
-      
         border: solid var(--br-b);
         border-width: 0 0 1px;
         text-align: left;
@@ -74,6 +75,20 @@
         padding: 0.375rem 0.75rem;
     }
 
+}
+
+.proxy-list{
+    max-height: 500px;
+    position: relative;
+    overflow: auto;
+
+
+    .statistic-list__row{
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .statistic-list__coll{
+        padding: 0.73rem 0.75rem;
+    }
 }
 
 

@@ -10,8 +10,7 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/tabs */ "./source/js/components/tabs.js");
-/* harmony import */ var _components_show_pass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/show-pass */ "./source/js/components/show-pass.js");
-/* harmony import */ var _components_btnTable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/btnTable */ "./source/js/components/btnTable.js");
+/* harmony import */ var _components_btnTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/btnTable */ "./source/js/components/btnTable.js");
 // import './components/animations';
 // import './components/getDinamicHeight';
 // import './components/sliders';
@@ -19,7 +18,7 @@ __webpack_require__.r(__webpack_exports__);
 // import './components/buffer';
 // import './components/modals';
 
-
+// import './components/show-pass';
 // import './components/select';
 // import './components/replaceEl';
 // import './components/accordions';
@@ -116,36 +115,6 @@ if (mainTable) {
 
 /***/ }),
 
-/***/ "./source/js/components/show-pass.js":
-/*!*******************************************!*\
-  !*** ./source/js/components/show-pass.js ***!
-  \*******************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./source/js/_vars.js");
-
-const {
-  passForm
-} = _vars__WEBPACK_IMPORTED_MODULE_0__["default"];
-passForm.map(item => {
-  const input = item.querySelector('.password-form__input');
-  const showBtn = item.querySelector('.password-form__show');
-  showBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    if (input.getAttribute('type') == 'password') {
-      this.classList.add('view');
-      input.setAttribute('type', 'text');
-    } else {
-      this.classList.remove('view');
-      input.setAttribute('type', 'password');
-    }
-  });
-});
-
-/***/ }),
-
 /***/ "./source/js/components/tabs.js":
 /*!**************************************!*\
   !*** ./source/js/components/tabs.js ***!
@@ -183,9 +152,7 @@ const tabsFunction = function (tabsDataInitArray, tabsNavAttr, tabsContentAttr) 
   });
 };
 tabsFunction(tabsParrents, "data-tab", "data-tab-content");
-tabsFunction(tabsParrents, "data-inner-tab", "data-inner-content");
-tabsFunction(tabsParrents, "data-small-tab", "data-small-content");
-tabsFunction(tabsParrents, "data-wrapper-tab", "data-wrapper-content");
+tabsFunction(tabsParrents, "data-proxy-tab", "data-proxy-content");
 
 /***/ }),
 
